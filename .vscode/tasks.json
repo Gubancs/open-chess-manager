@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "command-line-tool/",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build - command-line-tool",
+			"detail": "tsc --build tsconfig.json"
+		},
+		{
+			"type": "npm",
+			"script": "debug",
+			"path": "command-line-tool/",
+			"problemMatcher": [],
+			"label": "npm: debug - command-line-tool",
+			"detail": "tsc --build --watch tsconfig.json "
+		}
+	]
+}
